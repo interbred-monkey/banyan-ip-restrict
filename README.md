@@ -6,7 +6,7 @@ Add the git address to the package.json.
 E.g.
 ```
 "dependencies": {
-  "ip-restrict": "git@bitbucket.org:webcominternational/ip-restrict.git#1.0.0",
+  "ip-restrict": "git@github.com:interbred-monkey/banyan-ip-restrict.git",
 ```
 
 ## Usage
@@ -41,23 +41,14 @@ The library will generate the IP restrict list on the first request to the appli
 localhost:
   127.0.0.1
 
-Central Index HQ:
-  127.0.0.1
-
-Enterprise Europe A:
-  127.0.0.1/28
-
-Enterprise Europe B:
+IP list:
   - 127.0.0.1
   - 127.0.0.1
   - 127.0.0.1
 
-Enterprise Primary:
-  127.0.0.1
-
-Internal Network:
+Subnet:
   127.0.0.1/16
 ```
 
 ### NB
-The middleware is designed for use with the Express.JS library, but could easily be adapted to others.
+This library is for use with the Banyan API framework, but could be leveraged to other applications.
